@@ -209,6 +209,14 @@ input {
         gap: 20px;
         padding: 10px 20px;
     }
+    .contact {
+        padding: 30px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .contact input[type=text], input[type=email], textarea {
+        width: 80%;
+    }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .resume-content {
@@ -217,6 +225,13 @@ input {
     .about {
         padding: 30px;
         margin: 30px 30px;
+    }
+    .contact {
+        padding: 30px;
+        gap: 50px;
+    }
+    .contact input[type=text], input[type=email], textarea {
+        width: 80%;
     }
 }
 .hide {
