@@ -196,9 +196,15 @@ input {
     .skills-container {
         flex-direction: column;
     }
+    .resume-content {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
 }
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    
+    .resume-content {
+        padding: 10px 20px;
+    }
 }
 .hide {
     display: none;
