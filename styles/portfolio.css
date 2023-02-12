@@ -192,6 +192,7 @@ input {
 .contact a {
     text-decoration: none;
 }
+/* responsive layout for small screen */
 @media screen and (max-width: 576px) {
     .skills-container {
         flex-direction: column;
@@ -217,7 +218,37 @@ input {
     .contact input[type=text], input[type=email], textarea {
         width: 80%;
     }
+    .banner {
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    .banner img {
+        width: 100%;
+    }
+    .header {
+        background-image: none;
+    }
+    nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    nav #hire {
+        margin: 0;
+    }
+    .banner #download {
+        height: 0%;
+        margin-bottom: 20px;
+    }
 }
+/* responsive layout for medium screen */
 @media screen and (min-width: 577px) and (max-width: 992px) {
     .resume-content {
         padding: 10px 40px;
@@ -232,6 +263,27 @@ input {
     }
     .contact input[type=text], input[type=email], textarea {
         width: 80%;
+    }
+    .header {
+        background-image: none;
+    }
+    .banner {
+        margin: 0px 30px;
+    }
+    .banner img {
+        width: 100%;
+        margin-left: -40px;
+    }
+    .banner #download {
+        height: 0%;
+    }
+    nav {
+        padding: 50px 0px;
+        justify-content: space-around;
+    }
+    nav #hire {
+        margin: 0;
+        height: 0%;
     }
 }
 .hide {
